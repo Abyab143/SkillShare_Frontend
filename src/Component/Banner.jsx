@@ -3,7 +3,7 @@ import pdf from "../pdf/resume.pdf";
 import hero from "./data/hero.json";
 import Typed from "typed.js";
 import { Link } from "react-router-dom";
-import img from "../assets/Piyush.png";
+import img from "../assets/p-1.png";
 function Banner() {
   const typedRef = useRef(null);
   useEffect(() => {
