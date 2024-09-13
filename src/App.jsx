@@ -19,6 +19,7 @@ import Aos from "aos";
 import "aos/dist/aos.css"
 import Choose from "./Component/Choose";
 import Gallery from "./Component/Gallery";
+import TestPage from "./Component/Test";
 
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
           <Route path="/detailsCourse" element={<DetailsCourse/>} />
           <Route path="/addhackathon" element={<AddHackathon/>} />
           <Route path="/choose" element={<Gallery/>} />
+          <Route path="/test" element={<TestPage/>} />
           <Route path="/course" element={<Courses type="here..."/>} />
           <Route path="/certificate" element={<Courses type=" And Get certificate"/>} />
           <Route path="/event" element={<Event/>} />
