@@ -25,6 +25,7 @@ function AddEvent() {
 
 
   const uploadEvent = async () => {
+      
     setopen(true);
     try {
       const storageRef = ref(storage, `Events/${img.name}`);
@@ -74,6 +75,7 @@ function AddEvent() {
   };
    
   useEffect(()=>{
+    console.log(auth.id);
   const fetchEvent = async () => {
     const event = await axios.get(
       `https://skillshare-backend-070t.onrender.com/api/event/getEvents/${auth.id}`

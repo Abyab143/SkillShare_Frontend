@@ -38,7 +38,7 @@ function Banner() {
         </div>
         <div className="right">
           <div className="img" data-aos="fade-up-left" data-aos-duration="1000">
-            <img src={img} alt="hero" />
+            <img src={'https://img.freepik.com/premium-photo/photo-group-college-students-school-students-friends-with-educational-items_763111-29581.jpg'} alt="hero" />
           </div>
         </div>
       </div>
