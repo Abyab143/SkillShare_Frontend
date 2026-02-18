@@ -409,3 +409,65 @@ p{
     flex-direction: column-reverse;
   }
 }
+/* ============================= */
+/* RESPONSIVE FIX FOR DETAILS PAGE */
+/* ============================= */
+
+/* Make flex layout wrap on smaller screens */
+#a99 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Make both sections flexible */
+#a99 .left,
+#a99 .right {
+  flex: 1 1 500px;
+  width: 100%;
+}
+
+/* Make iframe responsive without touching JSX */
+#a99 .right iframe {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+}
+
+/* Better scroll on description */
+#a99 .left .content p {
+  overflow-y: auto;
+}
+
+/* Buttons responsive */
+.text-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ============================= */
+/* MOBILE VIEW */
+/* ============================= */
+@media only screen and (max-width: 768px) {
+
+  #a99 {
+    flex-direction: column;
+  }
+
+  #a99 .left,
+  #a99 .right {
+    width: 100%;
+  }
+
+  #a99 .left .content p {
+    font-size: 16px;
+    max-height: 45vh;
+  }
+
+  .text-center button {
+    width: 90%;
+  }
+}
+
